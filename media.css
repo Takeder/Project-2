@@ -1,0 +1,184 @@
+@media screen and (max-width: 945px) {
+    .wrapper {
+        padding: 0 30px 0 30px;
+
+    }
+
+}
+
+@media screen and (max-width: 723px) {
+
+}
+
+@media screen and (max-width: 557px) {
+
+}
+
+@media screen and (max-width: 648px) {
+
+    .header {
+        overflow-x: hidden;
+    }
+
+    .nav__desktop {
+        display: none;
+    }
+
+    .menu__mobile {
+        display: flex;
+        flex-direction: column;
+        /* height: 100%; */
+    }
+
+    .menu__inner {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+
+    }
+
+    .menu__burger {
+        display: flex;
+        justify-content: flex-end;
+        overflow: hidden;
+        cursor: pointer;
+        /* margin: 0;
+        padding: 0; */
+        width: 40px;
+        height: 40px;
+        font-size: 0;
+        background-color: #000;
+        border-radius: 5px;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+
+    }
+
+    .menu__burger span {
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        height: 4px;
+        width: 30px;
+        top: 18px;
+        left: 5px;
+        right: 5px;
+        transition: background 0s 0.3s;
+    }
+
+    .menu__burger span:after,
+    .menu__burger span:before  {
+        position: absolute;
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: #fff;
+        content: '';
+        transition-duration: 0.3s, 0.3s;
+        transition-delay: 0.3s, 0s;
+    }
+    .menu__burger span:after {
+        top: -10px;
+    }
+    .menu__burger span:before {
+        bottom: -10px;
+    }
+
+    .menu__burger.close span {
+        background: none;
+    }
+    .menu__burger.close span:after {
+        top: 0px;
+        transform: rotate(45deg);
+    }
+    .menu__burger.close span:before {
+        bottom: 0px;
+        transform: rotate(-45deg);
+    }
+
+    .nav__list {
+        display: none;
+        justify-content: start;
+        align-items: flex-start;
+        padding-left: 26px;
+        right: -100%;
+        opacity: 1;
+        transition-duration: .5s;
+        transition-property: all;
+        flex-direction: column;
+        padding-bottom: 0px;
+        top: 60px;
+        position: absolute;
+        border: none;
+        width: 100%;
+        height: 700px;
+        z-index: 3000;
+        background: #ffffff;
+    }
+
+    .nav__list p {
+        position: absolute;
+        right: 30px;
+        bottom: 57px;
+        transform: rotate(90deg);
+        font-family: 'Gilroy-Bold';
+        font-size: 34px;
+        line-height: 41px;
+        color: #828282;
+    }
+
+
+    .nav__list li {
+        padding: 30px 0;
+    }
+
+    .nav__list li a {
+        font-size: 34px;
+        line-height: 41px;
+    }
+
+
+    .hero__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero__text {
+        position: static;
+        margin-top: 23px;
+        /* left: 0; */
+        transform: translateX(0%);
+        /* left: 30px; */
+    }
+
+    .hero__language {
+        display: none;
+    }
+
+    .header {
+        margin-top: 0;
+        z-index: 0;
+        /* border: 1px solid red; */
+    }
+
+
+    .hero {
+        /* border: 1px solid red; */
+        padding-top: 65px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .hero__image1 {
+        content: url('Photo/Hero2.jpg');
+        width: 100%;
+        height: 478px;
+        /* border: 1px solid fuchsia; */
+    }
+    .hero__image {
+        width: 100%;
+        height: 478px;
+    }
+
+}

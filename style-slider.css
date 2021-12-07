@@ -1,0 +1,59 @@
+.splide .splide__arrow {
+    /* position: absolute; */
+    top: 220px;
+    /* margin: 0 500px; */
+    /* left: 250px; */
+    /* border: cornflowerblue 5px solid; */
+}
+
+.splide .splide__pagination {
+    /* position: absolute; */
+    bottom: 120px;
+    /* border: cornflowerblue 5px solid; */
+}
+
+.splide1 {
+    position: relative;
+}
+
+.splide1 .splide__arrow {
+    margin-top: 50px;
+}
+
+.splide__arrow.splide__arrow--prev {
+    background-color: red;
+}
+
+.splide1 .splide__arrow--prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.splide__arrow.splide__arrow--next {
+    background-color: red;
+}
+
+.splide1 .splide__arrow--next {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+li .splide__pagination__page {
+    background-color: red;
+}
+
+li .splide__pagination__page.is-active {
+    background-color: blue;
+}
+
+.splide1 .splide__pagination {
+    display: none;
+    position: absolute;
+    bottom: -50px;
+}
+
+
+
+ 

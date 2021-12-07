@@ -1,0 +1,339 @@
+$black-color: #070707;
+$dark-grey-color: #828282;
+$white-color: #FFFFFF;
+$smoke-white-color: #F6F6F6;
+
+@mixin Medium-font() {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+    color: $black-color;
+}
+
+@mixin Bold-font($color: $dark-grey-color) {
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    color: $color;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('../Font/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../Font/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    // border: red 1px solid;
+}
+
+.site-conteiner {
+    text-align: center;
+    /* border: 3px solid gold; */
+}
+
+/* Шапка */
+
+.header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin-top: 33px;
+    /* border: 3px solid gold; */
+}
+
+.wrapper {
+    max-width: 945px;
+    margin: 0 auto;
+    /* border: 3px solid firebrick; */
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: 1px solid #828282;
+    padding-bottom: 32px;
+}
+
+.nav__link {
+    @include Bold-font();
+    text-decoration: none;
+
+    &:hover {
+        color: $black-color;
+    }
+}
+
+// Бургер меню
+
+.menu__mobile {
+    display: none;
+}
+
+/* Секция Hero */
+
+.hero {
+    width: 100%;
+    padding-top: 128px;
+    background-color: $white-color;
+    /* border: cornflowerblue 5px solid; */
+    /* min-height: 768px; */
+
+    &__wrapper {
+        width: 100%;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: rgb(50, 85, 151) 5px solid; */
+    }
+
+    &__title, &__text {
+        text-align: left;
+    }
+
+    &__title {
+        font-family: 'Gilroy-Bold';
+        font-size: 47.3392px;
+        line-height: 57px;
+        color: $black-color;
+    }
+
+    &__text {
+        @include Medium-font();
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        // border: rgb(253, 22, 6) 5px solid;
+
+    }
+
+    &__language {
+        transform: rotate(-180deg);
+        writing-mode: vertical-rl;
+        font-family: 'Gilroy-Bold';
+        font-size: 16px;
+        line-height: 19px;
+        color: $dark-grey-color;
+        /* text-orientation: mixed; */
+        /* border: rgb(253, 22, 6) 5px solid; */
+
+        &_color {
+            color: #000000;
+        }
+    }
+
+    &__image  {
+        // background: url('../Photo/Photo1.jpg') no-repeat center / cover;
+        max-width: 100%;
+        height: 387px;
+        margin: 30px 0 104px 0;
+        object-fit: cover;
+        // border: rgb(51, 189, 17) 5px solid;
+    }
+}
+
+
+/* Секция About me */
+
+.about-me {
+    width: 100%;
+    /* padding-top: 120px; */
+    background-color: $smoke-white-color;
+    /* border: cornflowerblue 5px solid; */
+
+    &__content {
+        padding: 120px 0 107px 0;
+    }
+
+    &__title {
+        margin-bottom: 17px;
+        /* border: cornflowerblue 5px solid; */
+    }
+
+    &__text {
+        @include Medium-font();
+    }
+
+    &__text:nth-of-type(n+2) {
+        margin-top: 60px;
+    }
+}
+
+.title {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 41px;
+    color: $black-color;
+}
+
+
+/* Секция Skills */
+
+
+.skills {
+    width: 100%;
+    /* padding-top: 120px; */
+    background-color: $white-color;
+    /* border: cornflowerblue 5px solid; */
+
+    &__content {
+        margin: 91px 0 110px 0;
+        // background: blue;
+    }
+
+    &__text {
+        @include Medium-font();
+        margin-top: 69px;
+    }
+
+    &__title {
+        margin: 24px 0 37px 0;
+    }
+}
+
+.splide1 {
+    margin-top: 83px;
+}
+
+.skills-box__block {
+    // width: 166px;
+    height: 206px;
+    // border: rgb(105, 237, 100) 5px solid;
+}
+
+.stars {
+    // border: cornflowerblue 5px solid;
+    width: 166px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.skills-box__title {
+    margin: 23px 0 41px 0;
+    font-family: 'Gilroy-Bold';
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark-grey-color;
+}
+
+.stars__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    // border: cornflowerblue 5px solid;
+}
+
+.stars__item img {
+    font-size: 36px;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-size: cover; */
+    /* border: cornflowerblue 5px solid; */
+}
+
+
+
+/* Секция Портфолио */
+
+.portfolio {
+    width: 100%;
+    /* padding-top: 120px; */
+    background-color: $smoke-white-color;
+    /* border: cornflowerblue 5px solid; */
+
+    &__title {
+        padding: 113px 0 47px 0;
+    }
+
+    &__title-sub {
+        @include Medium-font();
+        display: inline-block;
+        margin-top: 45px;
+        margin-bottom: 99px;
+        padding-bottom: 1px;
+        text-align: center;
+        /* text-decoration: underline; */
+        border-bottom: 1px solid $black-color;
+        /* border-bottom: cornflowerblue 5px solid; */
+        /* width: 100%; */
+    }
+
+    &__image {
+        max-width: 100%;
+        /* border: cornflowerblue 5px solid; */
+    }
+}
+
+
+/* Подвал */
+
+.footer {
+    width: 100%;
+    height: auto;
+    /* padding-top: 120px; */
+    background-color: $white-color;
+    /* border: cornflowerblue 5px solid; */
+
+    &__wrapper {
+        max-width: 345px;
+    }
+
+    &__title {
+        margin-top: 114px;
+    }
+
+    &__text {
+        @include Medium-font();
+        text-align: center;
+        margin: 20px 0 30px 0;
+    }
+
+    &__icons {
+        margin: 86px 0 45px 0;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    &__buttom-text {
+        font-family: 'Gilroy-Medium';
+        font-size: 14px;
+        line-height: 16px;
+        color: $dark-grey-color;
+        margin-bottom: 123px;
+    }
+}
+
+.footer-link__button {
+    @include Bold-font($white-color);
+    background-color: $black-color;
+    width: 180px;
+    height: 42px;
+    border-radius: 50px;
+    cursor: pointer;
+}

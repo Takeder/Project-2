@@ -1,0 +1,362 @@
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('Font/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('Font/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.site-conteiner {
+    text-align: center;
+    /* border: 3px solid gold; */
+}
+
+/* Шапка */
+
+.header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin-top: 33px;
+    /* border: 3px solid gold; */
+}
+
+.wrapper {
+    max-width: 945px;
+    margin: 0 auto;
+    /* border: 3px solid firebrick; */
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: 1px solid #828282;
+    padding-bottom: 32px;
+}
+
+.nav__link {
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+    text-decoration: none;
+}
+
+.menu__mobile {
+    display: none;
+}
+
+.menu__burger {
+    display: block;
+    /* overflow: hidden; */
+    cursor: pointer;
+    margin: 10px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    position: relative;
+}
+.menu__burger span {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    height: 4px;
+    width: 30px;
+    top: 18px;
+    left: 5px;
+    right: 5px;  
+}
+.menu__burger span:after,
+.menu__burger span:before  {
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    content: '';
+}
+.menu__burger span:after {
+    top: -10px;
+}
+.menu__burger span:before {
+    bottom: -10px;
+}
+
+/* Секция Hero */
+
+.hero {
+    width: 100%;
+    padding-top: 128px;
+    background-color: #FFF;
+    /* border: cornflowerblue 5px solid; */
+    /* min-height: 768px; */
+}
+
+.hero__wrapper {
+    width: 100%;
+    /* height: auto; */
+    /* border: rgb(253, 22, 6) 5px solid; */
+}
+
+.hero__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: rgb(50, 85, 151) 5px solid; */
+}
+
+.hero__title, .hero__text {
+    text-align: left;
+}
+
+.hero__title {
+    font-family: 'Gilroy-Bold';
+    font-size: 47.3392px;
+    line-height: 57px;
+    color: #070707;
+}
+
+.hero__text {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+    color: #070707;
+}
+
+.hero__language {
+    transform: rotate(-180deg);
+    writing-mode: vertical-rl;
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    line-height: 19px;
+    color: #828282;
+    /* text-orientation: mixed; */
+    /* border: rgb(253, 22, 6) 5px solid; */
+}
+
+.hero__language span {
+    color: #000000;
+}
+
+.hero__image {
+    background: url('Photo/Photo1.jpg') no-repeat center / cover;
+    width: 100%;
+    height: 387px;
+    margin: 30px 0 104px 0;
+    /* border: rgb(51, 189, 17) 5px solid; */
+}
+
+
+/* Секция About me */
+
+
+.about-me {
+    width: 100%;
+    /* padding-top: 120px; */
+    background-color: #F6F6F6;
+    /* border: cornflowerblue 5px solid; */
+}
+
+.about-me__content {
+    padding: 120px 0 107px 0;
+    /* vertical-align: middle; */
+}
+
+.title {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 41px;
+    color: #070707;
+}
+
+.about-me__title {
+    margin-bottom: 17px;
+    /* border: cornflowerblue 5px solid; */
+}
+
+.about-me__text {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+    color: #070707;
+}
+
+.about-me__text:nth-of-type(n+2) {
+    margin-top: 60px;
+}
+
+/* Секция Skills */
+
+.skills {
+    width: 100%;
+    /* padding-top: 120px; */
+    background-color: #FFFFFF;
+    /* border: cornflowerblue 5px solid; */
+}
+
+.skills__content {
+    margin: 91px 0 110px 0;
+}
+
+.skills__text {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+    color: #070707;
+    margin-top: 69px;
+}
+
+.skills-box__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 83px;
+    /* border: cornflowerblue 5px solid; */
+}
+
+.skills-box__block {
+    width: 166px;
+    /* border: cornflowerblue 5px solid; */
+}
+
+.skills__title {
+    margin: 24px 0 37px 0;
+}
+
+.skills-box__title {
+    margin: 23px 0 41px 0;
+    font-family: 'Gilroy-Bold';
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+
+.stars__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.stars__item img {
+    font-size: 36px;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-size: cover; */
+    /* border: cornflowerblue 5px solid; */
+}
+
+/* Секция Портфолио */
+
+.portfolio {
+    width: 100%;
+    /* padding-top: 120px; */
+    background-color: #F6F6F6;
+    /* border: cornflowerblue 5px solid; */
+}
+
+/* .title {
+    border: cornflowerblue 5px solid;
+} */
+
+.portfolio__title {
+    padding: 113px 0 47px 0;
+}
+
+.portfolio__title-sub {
+    display: inline-block;
+    margin-top: 45px;
+    margin-bottom: 99px;
+    padding-bottom: 1px;
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    /* text-decoration: underline; */
+    color: #070707;
+    border-bottom: 1px solid black;
+    /* border-bottom: cornflowerblue 5px solid; */
+    /* width: 100%; */
+
+}
+
+.portfolio__image {
+    max-width: 100%;
+    /* border: cornflowerblue 5px solid; */
+}
+
+
+/* Подвал */
+
+.footer {
+    width: 100%;
+    height: auto;
+    /* padding-top: 120px; */
+    background-color: #FFFFFF;
+    /* border: cornflowerblue 5px solid; */
+}
+
+.footer__wrapper {
+    max-width: 345px;
+}
+
+.footer__title {
+    margin-top: 114px;
+}
+
+.footer__text {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #070707;
+    margin: 20px 0 30px 0;
+}
+
+.footer-link__button {
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background-color: #070707;
+    width: 180px;
+    height: 42px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.footer__icons {
+    margin: 86px 0 45px 0;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.footer__buttom-text {
+    font-family: 'Gilroy-Medium';
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+    margin-bottom: 123px;
+}
